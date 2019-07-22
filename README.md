@@ -45,6 +45,7 @@ On command line, type in the following commands:
        4. java -jar tgbot\target\tgbot-0.1-jar-with-dependencies.jar
 
 Telegram Bot name: @CityInfoTestBot
+=============================
 Telegram Bot token: 639836817:AAFGrwA9j0nT8B6kv0sUPAOzErQoUmF32hI
 ------------
 To start up the api service you need - 
