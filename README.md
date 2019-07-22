@@ -13,55 +13,51 @@ INSTALLATION
 Download zip archive with the files. Please make sure the release file is unpacked under a Web-accessible
 directory. You shall see the following files and directories:
 
-      demos/               demos
-      framework/           framework source files
-      requirements/        requirement checker
-      CHANGELOG            describing changes in every Yii release
-      LICENSE              license of Yii
-      README               this file
-      UPGRADE              upgrading instructions
+      .mvn               maven wrapper
+      api                api web-service
+      datasource         database 
+      tgbot              telegram-bot app
+      .gitignore         list-ignore source
+      mnvw               maven wrapper doc
+      mvnw.cmd           maven wrapper executable file
+      pom.xml            config file
+      README.md          this file
 
 
 REQUIREMENTS
 ------------
 
-The minimum requirement by Yii is that your Web server supports
-PHP 5.1.0 or above. Yii has been tested with Apache HTTP server
-on Windows and Linux operating systems.
-
-Please access the following URL to check if your Web server reaches
-the requirements by Yii, assuming "YiiPath" is where Yii is installed:
-
-      http://hostname/YiiPath/requirements/index.php
+The minimum requirements - next should be installed on your PC:
+- Google Chrome
+- MySQL
+- Java
 
 
 QUICK START
 -----------
 
-Yii comes with a command line tool called "yiic" that can create
-a skeleton Yii application for you to start with.
-
+To start up the telegram bot you need - 
 On command line, type in the following commands:
 
-        $ cd YiiPath/framework                (Linux)
-        cd YiiPath\framework                  (Windows)
+       1. using command 'cd' get into the root directory of the downloaded project 
+       2. mvnw clean
+       3. mvnw install
+       4. java -jar tgbot\target\tgbot-0.1-jar-with-dependencies.jar
 
-        $ ./yiic webapp ../testdrive          (Linux)
-        yiic webapp ..\testdrive              (Windows)
-
-The new Yii application will be created at "YiiPath/testdrive".
-You can access it with the following URL:
-
-        http://hostname/YiiPath/testdrive/index.php
-
+Telegram Bot name: @CityInfoTestBot
+Telegram Bot token: 639836817:AAFGrwA9j0nT8B6kv0sUPAOzErQoUmF32hI
+------------
+To start up the api service you need - 
+On command line, type in the following commands:       
+       
+       1. using command 'cd' get into the root directory of the downloaded project 
+       2. mvnw clean
+       3. mvnw install  
+       4. java -jar api\target\api-exec.jar
 
 WHAT's NEXT
 -----------
 
-Please visit the project website for tutorials, class reference
-and join discussions with other Yii users.
-
-
-
-The Yii Developer Team
-http://www.yiiframework.com
+To test the bot log - into telegram app, find bot by it's name and press start-button to join the conversation.
+------------
+To use api methods - open Google Chrome and type into the address line - http://localhost:8080/api/getall
