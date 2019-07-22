@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Драйвер, который используем для подключения к БД -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- "Язык", на котором будем общаться с нашей БД (MySQL) -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- URL для подключения к нашей "rent" БД -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/cityinfo</property>
+        <!-- Логин -->
+        <property name="hibernate.connection.username">root</property>
+        <!-- Пароль -->
+        <property name="hibernate.connection.password">root</property>
+        <!-- Пул подключений -->
+        <property name="hibernate.connection.pool_size">10</property>
+        <!-- Показ SQL-запросов в логах -->
+        <property name="show_sql">true</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+
+        <!-- Мапинг наших сущностей -->
+        <mapping class="com.evgen.entity.Cities"/>
+    </session-factory>
+</hibernate-configuration>
