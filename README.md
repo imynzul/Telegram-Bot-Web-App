@@ -30,7 +30,7 @@ REQUIREMENTS
 The minimum requirements - next should be installed on your PC:
 - Google Chrome
 - MySQL
-- Java
+- JDK 1.8+
 
 
 QUICK START
@@ -55,6 +55,14 @@ On command line, you need to type in the following commands from the project roo
 WHAT's NEXT
 -----------
 
-To test the bot log - into telegram app, find bot by it's name and press start-button to join the conversation.
+To test the bot log - into telegram app, find bot by it's name and press start-button to join the conversation
 ------------
-To use api methods - open Google Chrome and type into the address line - http://localhost:8080/api/getall
+Api Methods:
+------------
+/api/getall - return list of all the cities and their info
+------------
+/api/save - save new city and info to the DB
+------------
+/api/update - update info about the existing city in the database
+------------
+/api/delete - delete city and it's info from the database
