@@ -37,22 +37,20 @@ QUICK START
 -----------
 
 To start up the telegram bot you need - 
-On command line, type in the following commands:
+On command line, you need to type in the following commands from the project root:
 
-       1. using command 'cd' get into the root directory of the downloaded project 
-       2. mvnw clean
-       3. mvnw install
-       4. java -jar tgbot\target\tgbot-0.1-jar-with-dependencies.jar
+       1. mvnw clean
+       2. mvnw install
+       3. java -jar tgbot\target\tgbot-0.1-jar-with-dependencies.jar
 
 Telegram Bot name: @CityInfoTestBot
 =============================
 To start up the api service you need - 
-On command line, type in the following commands:       
+On command line, you need to type in the following commands from the project root:       
        
-       1. using command 'cd' get into the root directory of the downloaded project 
-       2. mvnw clean
-       3. mvnw install  
-       4. java -jar api\target\api-exec.jar
+       1. mvnw clean
+       2. mvnw install  
+       3. java -jar api\target\api-exec.jar
 
 WHAT's NEXT
 -----------
